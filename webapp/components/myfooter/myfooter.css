@@ -1,0 +1,10 @@
+.components-footer {
+    height: 100px;
+    line-height: 100px;
+    background: cornflowerblue;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
