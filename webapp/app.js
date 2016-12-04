@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-// import store from './store';
+import store from './store';
 Vue.use(VueRouter);
 import App from './components/App.vue';
 
@@ -11,19 +11,22 @@ import App from './components/App.vue';
 
 import Index from './components/index/Index.vue';
 import Banner from './components/banner/Banner.vue';
+
 const routes = [{
     path: '/index',
     component: Index
 }, {
     path: '/banner',
     component: Banner
-}]
+}];
+
 const router = new VueRouter({
     routes,
     // mode: 'history'
-})
+});
+
 const app = new Vue({
     router,
-    // store,
+    store,
     render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
