@@ -1,6 +1,6 @@
 'use strict';
 const data = {
-  title: "yd vue framework"
+  title: "Vue Vuex"
 };
 const indexController = {
   index() {
